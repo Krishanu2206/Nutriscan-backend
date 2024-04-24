@@ -45,7 +45,7 @@ app.get("/", (req, res)=>{
         "success" : true,
         "message" : "Node server running"
     })
-};
+);
 
 //PORT 
 const port = 3000;
