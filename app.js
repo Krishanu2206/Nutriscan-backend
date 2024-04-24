@@ -39,6 +39,13 @@ app.use(morgan('dev'));
 app.use('/api/v1/auth', require("./routes/userroutes"));
 app.use('/api/v1/post', require("./routes/postroutes"));
 app.use('/api/v1/history', require("./routes/historyroutes"));
+//ROOT ROUTE
+app.get("/", (req, res)=>{
+    res.status(200).send({
+        "success" : true,
+        "message" : "Node server running"
+    })
+};
 
 //PORT 
 const port = 3000;
