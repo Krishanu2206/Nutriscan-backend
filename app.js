@@ -41,7 +41,7 @@ app.use('/api/v1/post', require("./routes/postroutes"));
 app.use('/api/v1/history', require("./routes/historyroutes"));
 
 //PORT 
-const port = 8080;
+const port = 3000;
 
 
 //LISTEN
